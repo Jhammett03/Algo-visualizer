@@ -1,17 +1,45 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif; /* Added Poppins font with fallback */
 }
+
+.navbar {
+    width: 100%;
+    background-color: #007BFF;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 25px; /* Round border radius */
+    margin: 0 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+}
+
+#github__logo {
+    scale: 1.5;
+}
+
 
 .container {
     text-align: center;
     width: 90%;
     max-width: 800px;
+    margin: 20px auto; /* Add margin to center the container vertically */
+}
+
+h1 {
+    margin-bottom: 40px;
 }
 
 #grid {
@@ -65,9 +93,9 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover {
+.navbar a:hover {
     background-color: #0056b3;
-    transform: scale(1.05);
+    transform: scale(1.05); /* Scale up on hover */
 }
 
 button:focus {
@@ -75,4 +103,6 @@ button:focus {
 }
 
 button:active {
-    background-color: #0040
+    background-color: #004080;
+    transform: scale(.95);
+}

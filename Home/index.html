@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ab74e91db0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
-    <title>Pathfinding Visualizer</title>
+    <title>Algorithm Visualizers</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
-        <a href="../Home/index.html">Home</a>
-        <a href="./index.html">Breadth First Search</a>
+        <a href="index.html">Home</a>
+        <a href="../BFS/index.html">Breadth First Search</a>
         <a href="https://github.com/Jhammett03/Algo-visualizer" target="_blank"><i id="github__logo"class="fa-brands fa-github"></i></a> <!-- GitHub link -->
         <!-- Add more links to other visualizers here -->
     </nav>
     <div class="container">
-        <h1>Breadth First Search</h1>
-        <div id="grid"></div>
-        <div class="buttons">
-            <button onclick="startBFS()">Start BFS</button>
-            <button onclick="resetGrid()">Reset Grid</button>
-            <button onclick="enableSetStart()">Set Start Position</button>
-            <button onclick="enableSetEnd()">Set End Position</button>
+        <h1>Algorithm Visualizers</h1>
+        <div class="visualizer-list">
+            <div class="visualizer-item">
+                <a href="../BFS/index.html">
+                    <div class="visualizer-thumbnail">
+                        <img src="../images/bfs-thumbnail.png" alt="Pathfinding Visualizer">
+                    </div>
+                    <h2>Breadth First Search</h2>
+                </a>
+            </div>
+            <!-- Add more visualizer items here -->
         </div>
     </div>
-    <script src="bfs.js"></script>
 </body>
 </html>

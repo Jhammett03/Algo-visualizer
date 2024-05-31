@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.visualizer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.visualizer-item {
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Round border radius */
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.visualizer-item a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+    display: block;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.visualizer-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.visualizer-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.visualizer-item h2 {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: #fff;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #007BFF;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 25px; /* Round border radius */
+    margin: 0 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Scale up on hover */
+}
+#github__logo {
+    scale: 1.5;
+}
