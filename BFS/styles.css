@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-gap: 2px;
+    margin: 20px auto;
+}
+
+.cell {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cell.start {
+    background-color: #4CAF50;
+}
+
+.cell.end {
+    background-color: #F44336;
+}
+
+.cell.wall {
+    background-color: #333;
+}
+
+.cell.visited {
+    background-color: #2196F3;
+}
+
+.cell.path {
+    background-color: #FFEB3B;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: #0040
