@@ -123,3 +123,14 @@ function resetGrid() {
     }
     createGrid();
 }
+
+function generateRandomMaze() {
+    resetGrid();
+    for (let y = 0; y < 20; y++) {
+        for (let x = 0; x < 20; x++) {
+            if (Math.random() < 0.3 && !(x === start[0] && y === start[1]) && !(x === end[0] && y === end[1])) {
+                grid[y][x].classList.add('wall');
+            }
+        }
+    }
+}

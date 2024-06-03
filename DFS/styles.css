@@ -30,7 +30,6 @@ body {
     scale: 1.5;
 }
 
-
 .container {
     text-align: center;
     width: 90%;
@@ -79,6 +78,10 @@ h1 {
 
 .buttons {
     margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 button {
@@ -93,16 +96,11 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.navbar a:hover {
-    background-color: #0056b3;
-    transform: scale(1.05); /* Scale up on hover */
-}
-
 button:focus {
     outline: none;
 }
 
 button:active {
     background-color: #004080;
-    transform: scale(.95);
+    transform: scale(0.95);
 }
