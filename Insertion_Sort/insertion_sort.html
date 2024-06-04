@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ab74e91db0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
-    <title>A* Visualizer</title>
+    <title>Insertion Sort Visualization</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,19 +16,24 @@
         <a href="../Dijkstra/Dijkstra.html">Dijkstra's Algorithm</a>
         <a href="../AStar/astar.html">A* Search</a>
         <a href="../Insertion_Sort/insertion_sort.html">Insertion Sort</a>
+        <a href="../Insertion_Sort/insertion_sort.html">Insertion Sort</a>
         <a href="https://github.com/Jhammett03/Algo-visualizer" target="_blank"><i id="github__logo"class="fa-brands fa-github"></i></a>
     </nav>
     <div class="container">
-        <h1>A* Search</h1>
-        <div id="grid"></div>
+        <h1>Insertion Sort Visualization</h1>
+        <div id="array-container"></div>
         <div class="buttons">
-            <button onclick="startAStar()">Start A*</button>
-            <button onclick="resetGrid()">Reset Grid</button>
-            <button onclick="enableSetStart()">Set Start Position</button>
-            <button onclick="enableSetEnd()">Set End Position</button>
-            <button onclick="generateRandomMaze()">Generate Random Maze</button>
+            <button onclick="startInsertionSort()">Sort</button>
+            <button onclick="generateNewArray(20)">New Array</button>
+        </div>
+        <div class="slider-container">
+            <label for="speed-slider">Speed:</label>
+            <input type="range" id="speed-slider" min="1" max="1000" value="500">
+            <label for="item-slider">Number of Items: </label>
+            <input type="range" id="item-slider" min="1" max="50" value="20">
+    
         </div>
     </div>
-    <script src="astar.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
